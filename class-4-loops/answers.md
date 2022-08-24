@@ -1,4 +1,4 @@
-# Practice Questions
+# Practice Questions Solutions
 
 1. What is the value that is printed?
 
@@ -11,6 +11,8 @@ for w in [2, 4, -1]:
 
 print([u, v, w])
 ```
+
+`[3, -6, -1]` will get printed
 
 2. What is the value that is printed?
 
@@ -29,6 +31,8 @@ while r < s:
 print([r, s, t, k, l])
 ```
 
+`[4, 2, 2, [None, False], [True, 1, 6, [None, False], 4]]` will get printed
+
 3. What is the value that is printed?
 
 ```
@@ -45,15 +49,16 @@ for x in [0, 2, 1]:
 print([a, c, x])
 ```
 
+`[4, 'ummcrumbrrr', 1]` will get printed
+
 ## Finding the youngest person's name
 
 4. Suppose we have a list of names and a list of corresponding ages. We want to find the name of the youngest person. How would be do this?
 
 We can loop through the indices of the lists and ask if the age is younger than the youngest age recorded so far, and if it is, we look up the name at that index in our names list!
 
-Use the template below to get started. Try it yourself on replit!
 
-Here, we initialize the `youngest_age` to be infinity using `float('inf')`. This is because any number is less than infinity, so as long as there's one age/name, we will get an answer. :)
+**Answer** 
 
 ```
 ages = [15, 18, 17, 20, 16, 14, 18]
@@ -63,13 +68,13 @@ names = ["Ana", "Sarah", "Jessica", "Izzy", "Grace", "Madison", "Skyler"]
 youngest_age = float('inf')
 youngest_name = ""
 
-# implement the following
-# loop through the lists using the indices
-
-
+# we loop through each index in the 'ages' list
+for i in range(len(ages)):
     # if the age is younger than the youngest one we've seen, then we replace the
     # youngest's name with the current name and the youngest age with the current age
-
+    if ages[i] < youngest_age:
+        youngest_name = names[i]
+        youngest_age = ages[i]
 
 print(youngest_name)
 ```
@@ -116,3 +121,29 @@ print(y)  # prints 2.0
 ```
 
 Eventually, we get to the right answer! Instead of typing (or copy/pasting) a million times, we can instead use a loop to make the computer do this work for us. Try to write a loop.
+
+**Answer**
+
+```
+a = 4
+x = None
+y = 3
+while x != y:
+    x = y
+    print(x)
+    y = (x + a/x) / 2
+```
+
+While in our case, checking for equality between `x` and `y` is okay, it's dangerous to test `float` equality because floats can't accurately represent all numbers! Instead, it's good practice to stop when `x` and `y` are small enough:
+
+```
+a = 4
+x = None
+y = 3
+while abs(x-y) < 1e-12:
+    x = y
+    print(x)
+    y = (x + a/x) / 2
+```
+
+Woah. How's that for a taste of how computer science works?

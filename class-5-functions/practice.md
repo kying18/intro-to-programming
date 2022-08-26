@@ -44,3 +44,8 @@ biz = lambda x: x + 'b'
 12. What is the value of `foo('foo')`?
 13. What is the value of `bar('foo')`?
 14. What is the value of `biz('foo')`?
+
+## Practice writing functions
+15. Write a function `get_circumference(r)` that takes in a radius and returns the circumference, and another function `get_area(r)` that returns the area of a circle. Now use a loop and find these values `for i in range(10)`!
+16. Write a function `num_comp(x, y)` that takes in two numbers and returns the smaller of the two numbers.
+17. Write a function `string_comp(x, y)` that takes in two strings and returns `True` if the strings share characters, and False if not. For example, `string_comp("abc", "a")` should return `True`, `string_comp("abc", "xyza")` should return `True`, but `string_comp("abc", "lmnop")` should return `False`.

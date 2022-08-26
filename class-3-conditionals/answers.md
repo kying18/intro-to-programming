@@ -108,7 +108,7 @@ Same answer as above.
 
 7. Between A and B, which piece of code is more readible?
 
-A!
+B!
 
 # Write Some Code!
 

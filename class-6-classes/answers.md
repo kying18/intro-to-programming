@@ -20,17 +20,17 @@ class Person:
 What results from the following print statements?
 
 ```
-print(Person) 
+print(Person)  # class
 
 p = Person(150)
-print(p) 
+print(p)  # instance
 
 c = Car(2000, p)
-print(Car.weight) 
+print(Car.weight)  # 1000
 
-print(c.weight) 
+print(c.weight)  # 2000
 
-print(c.driver.weight) 
+print(c.driver.weight)  # 150
 
-print(Car.driver.weight) 
+print(Car.driver.weight)  # error
 ```

@@ -32,7 +32,30 @@ def e(x,y):
 10. What is the value of `d(2, a(1), b(3))`?
 11. What is the value of `e(1, 2)`?
 
-## Assume we have the following function:
+## Functions as objects
+
+We did not learn about functions as objects, or lambda functions, in class. Here is an example:
+
+If I have:
+```
+def a(x):
+    return x + 1
+```
+
+then I make `b = a`. Now, I can call `b(1)` and it would give me `2`, and `b(3)` would give me `4`, etc.
+
+Now for lambda functions, it's just a fancy keyword for creating a function without a name. If I have:
+```
+y = lambda x: x + 2
+```
+
+Then `lambda x: x + 2` is saying: "create a function that takes in variable `x` and returns `x+2`". Now, I've set `y` equal to this function, so this is the equivalent of doing:
+```
+def y(x):
+    return x+2
+```
+
+Now do the following problems:
 
 ```
 def foo(x):
@@ -41,9 +64,6 @@ bar = foo
 biz = lambda x: x + 'b'
 ```
 
-12. What is the value of `foo('foo')`?
-13. What is the value of `bar('foo')`?
-14. What is the value of `biz('foo')`?
 
 ## Practice writing functions
 15. Write a function `get_circumference(r)` that takes in a radius and returns the circumference, and another function `get_area(r)` that returns the area of a circle. Now use a loop and find these values `for i in range(10)`!

@@ -1,12 +1,9 @@
 # Intro to Programming (in Python)
 
-### Sign up today!!
+### Video series
 
-Session 1: https://www.lighthall.co/class/781005c1-fc89-4f0c-bb7f-b7f4652fab8b
-
-Session 2: https://www.lighthall.co/class/92d0d9c4-346d-43b8-a3e9-d662c9afcc92
-
+Follow along the video series here! https://www.youtube.com/playlist?list=PLkWv3oO4kHnsiGHnifBxa79d-xPwYDiAx
 
 ### Code editor
 
-Please create a Replit account if you have not already: https://replit.com/
+I use Replit in my videos: https://replit.com/
